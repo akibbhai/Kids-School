@@ -22,12 +22,13 @@
 .nav-container,
 .banner-container,
 .card-container,
-.gallery-container {
+.gallery-container,
+.footer-container {
     max-width: 1160px;
     margin: 0px auto;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
+    padding: 1.5rem 0px;
   }
 
 .flex {
@@ -313,6 +314,67 @@
     margin: 3.5rem auto;
 }
 
+/* footer section style  */
+
+.footer-section {
+    background-color: rgb(1, 172, 253);
+}
+
+.footer-container {
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    padding: 7rem 0 10rem 0;
+}
+
+.footer-logo {
+    width: 5.7rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+.footer-logo-title {
+    font-size: clamp(2.3rem, 4.2vw, 2.7rem);
+    color: rgb(255, 255, 255);
+    line-height: 2.8rem;
+}
+
+.footer-logo-details {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    line-height: 1.8rem;
+    padding: 2.5rem 9rem 0rem 0rem;
+}
+
+.footer-link-title {
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2.1rem;
+}
+
+.link-container {
+    flex-direction: column;
+    gap: 1.8rem;
+    list-style: none;
+}
+
+.footer-link {
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-icon-container {
+    gap: 1rem;
+}
+
+.footer-icon-container img {
+    width: 2.8rem;
+    height: auto;
+}
+
 /* responsive media query for mobile */
 
 @media screen and (max-width: 576px) {
@@ -325,7 +387,7 @@
 
     .section-title {
         color: rgb(0, 0, 0);
-        font-size: 2.2rem;
+        font-size: 2.3rem;
         margin: 3.3rem auto 1rem auto;
     }
     
@@ -341,7 +403,8 @@
     .nav-container,
     .banner-container,
     .card-container,
-    .gallery-container {
+    .gallery-container,
+    .footer-container {
         margin: 0px 2rem;
     }
 
@@ -420,6 +483,22 @@
 
     .btn-gap {
         margin: 0.5rem auto 3.5rem auto;
+    }
+
+    /* footer section style  */
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 5rem;
+    }
+
+    .footer-link-title {
+        margin-top: 3rem;
+    }
+
+    .footer-logo-details {
+        padding: 0rem;
+        margin-top: 2rem;
     }
 
 }
